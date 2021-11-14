@@ -1,40 +1,31 @@
 nav {
   box-sizing: border-box;
+  z-index: 1;
   position: fixed;
   padding: 0 5vw;
   width: 100vw;
-  height: 5vw;
+  height: 10vh;
 }
 
 .nav__item {
-  a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-  }
-}
-
-@mixin navlink($color) {
-  margin: 0 16px;
-  padding: 0 8px;
-
-  h1, span {
-    display: block;
-    border-bottom: 8px solid $color;
-    padding: 8px;
-    line-height: 24px;
-  }
+  display: block;
+  margin: 0 8px;
+  padding: 0 16px;
+  color: $black;
+  text-decoration: none;
+  font-weight: bold;
 
   &:hover {
-    background-color: $color;
+    background-color: $red;
     color: $white;
   }
 }
 
-#logo {
-  @include navlink($pink);
-}
-
 .nav__link {
-  @include navlink($orange);
+  display: block;
+  border-bottom: 8px solid $red;
+  padding: 8px;
+  padding-top: 16px;
+  line-height: 24px;
+  color: set-color($red);
 }

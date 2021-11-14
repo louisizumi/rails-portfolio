@@ -18,6 +18,7 @@
 }
 
 html, body {
+  overflow-x: hidden;
   min-height: 100vh;
 }
 
@@ -47,3 +48,14 @@ html, body {
   align-items: center;
 }
 
+.flex--flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.grid--halves {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+}
