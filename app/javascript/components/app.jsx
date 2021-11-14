@@ -1,9 +1,15 @@
 import React from 'react';
+import Navbar from './navbar';
+import Footer from './footer';
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="flex--main">
+      <Navbar />
+      <main>
+        <h1>Hello</h1>
+      </main>
+      <Footer />
     </div>
   );
 };
