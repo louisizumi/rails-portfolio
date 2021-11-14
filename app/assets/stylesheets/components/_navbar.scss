@@ -6,18 +6,7 @@ nav {
   height: 5vw;
 }
 
-#logo {
-  border-bottom: 8px solid $pink;
-  padding: 8px;
-
-  &:hover {
-    background-color: $pink;
-    color: $white;
-  }
-}
-
 .nav__item {
-
   a {
     color: black;
     font-weight: bold;
@@ -25,19 +14,27 @@ nav {
   }
 }
 
-.nav__link {
+@mixin navlink($color) {
   margin: 0 16px;
   padding: 0 8px;
 
-  span {
+  h1, span {
     display: block;
-    border-bottom: 8px solid $orange;
+    border-bottom: 8px solid $color;
     padding: 8px;
     line-height: 24px;
   }
 
   &:hover {
-    background-color: $orange;
+    background-color: $color;
     color: $white;
   }
+}
+
+#logo {
+  @include navlink($pink);
+}
+
+.nav__link {
+  @include navlink($orange);
 }
