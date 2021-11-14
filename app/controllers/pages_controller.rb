@@ -1,3 +1,5 @@
 class PagesController < ApplicationController
-  def index; end
+  def index
+    @nav_items = ['About', 'Stack', 'Projects', 'Contact']  
+  end
 end

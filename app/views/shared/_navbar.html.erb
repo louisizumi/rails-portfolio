@@ -1,0 +1,12 @@
+<nav class="flex--space-between">
+  <div id="logo">
+    <h1>louisizumi</h1>
+  </div>
+  <div id="nav-items">
+    <ul class="flex--space-around">
+      <% @nav_items.each do |nav_item| %>
+        <%= render 'shared/navitem', inner_text: nav_item %>
+      <% end %>
+    </ul>
+  </div>
+</nav>
