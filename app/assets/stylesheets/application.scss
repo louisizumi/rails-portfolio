@@ -54,14 +54,33 @@ html, body {
   align-items: center;
 }
 
+.flex--align-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.grid--halves {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+}
+
+.grid--thirds {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  height: 70vh;
+}
+
 .grid--2-1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 5vw;
 }
 
-.grid--halves {
+.grid--1-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 5vw;
 }
