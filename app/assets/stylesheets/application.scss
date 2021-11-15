@@ -54,6 +54,12 @@ html, body {
   align-items: center;
 }
 
+.grid--2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5vw;
+}
+
 .grid--halves {
   display: grid;
   grid-template-columns: 1fr 1fr;

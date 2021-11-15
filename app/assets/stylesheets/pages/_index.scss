@@ -9,13 +9,14 @@ main {
 .hero {
   box-sizing: border-box;
   padding: 5vh 20vw;
-  min-height: 100vh;
+  height: 100vh;
+}
+
+#top {
+  height: 90vh;
 }
 
 .hero__aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   &--wide {
     width: 60%;
@@ -43,20 +44,9 @@ main {
   }
 }
 
-#seal {
-  z-index: -1;
-  position: absolute;
-  bottom: -100px;
-  left: -64px;
-  border: 4px solid $red;
-  border-radius: 50%;
-  width: 200px;
-  transform: rotate(-4deg);
-}
-
 #headshot {
   border-radius: 50%;
-  width: 80%;
+  width: 100%;
 }
 
 .list--stack {
