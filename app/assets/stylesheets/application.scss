@@ -13,12 +13,14 @@
 * {
   margin: 0;
   padding: 0;
+  max-width: 1920px;
   list-style-type: none;
   font-family: $body-font;
 }
 
 html, body {
   overflow-x: hidden;
+  margin: 0 auto;
   min-height: 100vh;
 }
 
