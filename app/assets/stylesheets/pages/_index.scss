@@ -31,7 +31,7 @@ main {
 .hero {
   box-sizing: border-box;
   padding: 5vh 15vw;
-  height: 100vh;
+  min-height: 100vh;
 
   &:nth-child(2n + 1) {
     background-color: $red;
@@ -39,6 +39,7 @@ main {
 }
 
 #top {
+  min-height: 90vh;
   height: 90vh;
 }
 
@@ -84,5 +85,50 @@ main {
 }
 
 .stack-card {
+  box-sizing: border-box;
+  overflow-y: hidden;
+  position: relative;
   background-color: $white;
+  text-align: left;
+}
+
+.stack-card--inner {
+  overflow-y: scroll;
+  padding: 48px;
+  max-height: 50vh;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.stack-card__item {
+  margin-bottom: 8px;
+}
+
+.stack-card__img {
+  width: 64px;
+}
+
+.stack-card__info {
+  margin: 8px 0 8px 24px;
+}
+
+.show-more {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 48px;
+  font-weight: bold;
+  animation: 0.5s ease-out 0s infinite alternate bounce;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-40%);
+  }
 }
