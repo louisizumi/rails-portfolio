@@ -1,6 +1,20 @@
-<div class="hero" style="text-align: right;">
+<div class="hero" id="contact">
   <h2 class="hero__header hero__header--white">Contact</h2>
-  <div class="flex--center">
-    <span>A contact form here</span>
+  <div class="grid--halves">
+    <div class="hero__aside flex--center" id="map" style="height: 100%; width: 100%" data-controller="map">
+      
+    </div>
+    <div class="hero__aside flex--center">
+      <form action="/" method="POST" class="contact">
+        <div class="flex--space-between">
+          <input type="text" name="name" placeholder="name" id="name">
+          <input type="text" name="company" placeholder="company" id="company">
+        </div>
+        <input type="text" name="subject" placeholder="subject" id="subject">
+        <textarea name="message" placeholder="message" id="message" rows="8"></textarea>
+        <input type="submit">
+      </form>
+    </div>
+    <% console %>
   </div>
 </div>

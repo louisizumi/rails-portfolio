@@ -6,34 +6,13 @@ main {
   width: 100vw;
 }
 
-#to-top {
-  position: fixed;
-  bottom: 32px;
-  right: 48px;
-  background-color: $white;
-  font-weight: bold;
-
-  a {
-    display: inline-block;
-    padding: 8px 16px;
-    line-height: 24px;
-    color: $red;
-    text-decoration: none;
-    transition: transform 0.2s ease-in-out;
-  }
-
-  a:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
-  }
-}
-
 .hero {
   box-sizing: border-box;
   padding: 5vh 15vw;
   min-height: 100vh;
 
   &:nth-child(2n + 1) {
+    text-align: right;
     background-color: $red;
   }
 }
@@ -44,6 +23,7 @@ main {
 }
 
 .hero__aside {
+  min-height: 67vh;
 
   &--wide {
     width: 60%;
@@ -58,7 +38,7 @@ main {
   display: inline-block;
   margin-bottom: 32px;
   padding: 8px 16px;
-  height: 10vh;
+  min-height: 8vh;
   font-size: 4rem;
 
   &--red {
@@ -76,7 +56,12 @@ main {
 
 .hero__text {
   margin-bottom: 1rem;
+  width: 40vw;
   text-align: justify;
+
+  a {
+    color: $red;
+  }
 }
 
 #headshot {
@@ -88,22 +73,14 @@ main {
   box-sizing: border-box;
   overflow-y: hidden;
   position: relative;
+  height: fit-content;
+  padding: 48px 32px;
   background-color: $white;
   text-align: left;
 }
 
-.stack-card--inner {
-  overflow-y: scroll;
-  padding: 48px;
-  max-height: 50vh;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 .stack-card__item {
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 
 .stack-card__img {
@@ -131,4 +108,16 @@ main {
   to {
     transform: translateY(-40%);
   }
+}
+
+.marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background-color: $red;
+  color: $white;
+  font-size: 32px;
 }

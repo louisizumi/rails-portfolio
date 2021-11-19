@@ -45,6 +45,7 @@ module.exports = function(api) {
         }
       ]
     ].filter(Boolean),
+    ignore: [ './node_modules/mapbox-gl/dist/mapbox-gl.js' ],
     plugins: [
       'babel-plugin-macros',
       '@babel/plugin-syntax-dynamic-import',

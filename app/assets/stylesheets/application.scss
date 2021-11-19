@@ -18,6 +18,10 @@
   font-family: $body-font;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   overflow-x: hidden;
   margin: 0 auto;
