@@ -3,60 +3,54 @@
 
 main {
   flex: 1;
-  width: 100vw;
 }
 
 .hero {
   box-sizing: border-box;
-  padding: 5vh 15vw;
-  min-height: 100vh;
-
-  &:nth-child(2n + 1) {
-    text-align: right;
-    background-color: $red;
-  }
-}
-
-#top {
   min-height: 90vh;
-  height: 90vh;
-}
-
-.hero__aside {
-  min-height: 67vh;
-
-  &--wide {
-    width: 60%;
-  }
-
-  &--narrow {
-    width: 40%;
-  }
-}
-
-.hero__header {
-  display: inline-block;
-  margin-bottom: 32px;
-  padding: 8px 16px;
-  min-height: 8vh;
-  font-size: 4rem;
 
   &--red {
-    border-bottom: 8px solid $red;
     background-color: $red;
     color: $white;
   }
 
   &--white {
-    border-bottom: 8px solid $white;
     background-color: $white;
     color: $red;
   }
 }
 
+.hero__header {
+  display: inline-block;
+  padding: 1rem 2rem;
+
+  &--red {
+    background-color: $white;
+    color: $red;
+  }
+
+  &--white {
+    background-color: $red;
+    color: $white;
+  }
+}
+
+.hero__aside {
+  position: relative;
+  min-height: 90vh;
+
+  &--red {
+    background-color: $red;
+  }
+
+  &--white {
+    background-color: $white;
+  }
+}
+
 .hero__text {
   margin-bottom: 1rem;
-  width: 40vw;
+  font-size: 18px;
   text-align: justify;
 
   a {
@@ -64,31 +58,14 @@ main {
   }
 }
 
-#headshot {
-  border-radius: 50%;
-  width: 100%;
-}
+.text {
+  &--left {
+    text-align: left;
+  }
 
-.stack-card {
-  box-sizing: border-box;
-  overflow-y: hidden;
-  position: relative;
-  height: fit-content;
-  padding: 48px 32px;
-  background-color: $white;
-  text-align: left;
-}
-
-.stack-card__item {
-  margin-bottom: 24px;
-}
-
-.stack-card__img {
-  width: 64px;
-}
-
-.stack-card__info {
-  margin: 8px 0 8px 24px;
+  &--right {
+    text-align: right;
+  }
 }
 
 .show-more {
@@ -110,14 +87,8 @@ main {
   }
 }
 
-.marker {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  background-color: $red;
-  color: $white;
-  font-size: 32px;
+@media screen and (max-width: 900px) {
+  .flex--center {
+    display: block;
+  }
 }

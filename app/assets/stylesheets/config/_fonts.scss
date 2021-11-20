@@ -14,3 +14,30 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+@font-face {
+  font-family: "Game Battles";
+  src: font-url('GameBattles.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Game Station";
+  src: font-url('GameStation.otf');
+}
+
+@font-face {
+  font-family: "NES";
+  src: font-url('hello-world.ttf');
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}

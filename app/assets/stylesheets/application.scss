@@ -13,7 +13,6 @@
 * {
   margin: 0;
   padding: 0;
-  max-width: 1920px;
   list-style-type: none;
   font-family: $body-font;
 }
@@ -60,6 +59,12 @@ html, body {
   align-items: center;
 }
 
+.flex--flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .flex--align-start {
   display: flex;
   justify-content: center;
@@ -69,7 +74,7 @@ html, body {
 .grid--halves {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5vw;
+  width: 100%;
 }
 
 .grid--thirds {
@@ -78,10 +83,14 @@ html, body {
   gap: 32px;
 }
 
+.grid--quarters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .grid--2-1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 5vw;
 }
 
 .grid--1-2 {

@@ -1,0 +1,57 @@
+.projects-container {
+  margin: 0 10vw;
+
+  div {
+    gap: 5vw;
+  }
+}
+
+.project-card {
+  box-sizing: border-box;
+  overflow-y: hidden;
+  position: relative;
+  min-width: 300px;
+  min-height: 200px;
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+
+  ul {
+    position: absolute;
+    left: 24px;
+    bottom: 16px;
+
+    li {
+      padding-right: 8px;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+#buddie-up {
+  background-color: black;
+
+  h3 {
+    font-family: 'Game Battles';
+    background-image: linear-gradient(to right, #D5024B, #FF6825, #D5024B, #FF6825);
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientScroll 5s linear infinite;
+    @keyframes gradientScroll {
+        to { background-position: 100% 0% }
+    }
+  }
+}
+
+#sixteen-bit-rentals {
+  border: 4px solid black;
+  background-color: #eee;
+
+  h3 {
+    font-family: "NES";
+    color: $black;
+  }
+}

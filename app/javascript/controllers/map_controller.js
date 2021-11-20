@@ -15,8 +15,8 @@ export default class extends Controller {
           const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/louiszumi/ckw5lomvs1qs814o58uh0os4t',
-            center: [lat, long],
-            zoom: 10
+            center: [0.7302, 52.3963],
+            zoom: 5
           });
           const el = document.createElement('div');
           el.innerText="泉";

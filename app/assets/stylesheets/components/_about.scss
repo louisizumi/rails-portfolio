@@ -1,0 +1,15 @@
+#about {
+  margin: 0 5vw;
+}
+
+#name {
+  padding-left: 0;
+  color: $red;
+}
+
+#headshot {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  object-position: center;
+}

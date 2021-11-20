@@ -1,25 +1,12 @@
-<div class="hero flex--center" id="top">
+<div class="hero" id="top">
   <div class="grid--2-1">
     <div class="hero__aside flex--center">
-      <div>
-        <h2 class="hero__header hero__header--red">About Me</h2>
-        <p class="hero__text">
-          My name is Louis and I am Full Stack Web Developer based in London. My specialties include <i class="devicon-javascript-plain colored"></i> Javascript, <i class="devicon-rails-plain colored"></i> Ruby on Rails, and <i class="devicon-react-original colored"></i> React.
-        </p>
-        <p class="hero__text">
-          I have a number of projects under my belt including 7 <i class="devicon-rails-plain colored"></i> Ruby on Rails web applications, 6 <i class="devicon-react-original colored"></i> React single-page applications, and a number of other smaller projects which you can find <a href=”#projects”>below</a>.
-        </p>
-        <p class="hero__text">
-          For those hiring, please feel free to contact me.
-        </p>
-        <div class="calls-to-action flex--flex-start">
-          <a href="#contact" class="btn">Contact Me</a>
-          <a href="#cv" class="btn">See my CV</a>
-        </div>
+      <div id="about">
+        <h2 class="hero__header hero__header--red" id="name">Louis Drinkwater</h2>
+        <h3 class="hero__header hero__header--white" id="desc">Full Stack Web Developer</h3>
       </div>
     </div>
-    <div class="hero__aside flex--center">
-      <%= image_tag('LeWagon_Web - Edited.jpg', id: "headshot") %>
-    </div>
+    <%= image_tag('LeWagon_Web - Edited.jpg', id: "headshot") %>
   </div>
 </div>
+<%= render 'shared/navbar' %>

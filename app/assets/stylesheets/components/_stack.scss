@@ -1,0 +1,31 @@
+.stack-card {
+  box-sizing: border-box;
+  overflow-y: hidden;
+  position: relative;
+  height: fit-content;
+  padding: 3rem 2rem;
+  // background-color: $white;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 2rem;
+  }
+}
+
+.stack-card__item {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.stack-card__img {
+  width: 64px;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.stack-card__info {
+  margin: 8px 0 8px 24px;
+}

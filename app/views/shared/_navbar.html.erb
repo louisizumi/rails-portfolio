@@ -1,12 +1,18 @@
-<nav class="flex--space-between" id="nav">
-  <div class="flex--center">
-    <a href="#" class="nav__item"><h1 class="nav__link">泉Louis</h1></a>
-  </div>
+<nav id="nav">
   <div id="nav-items">
-    <ul class="flex--space-around">
-      <% @nav_items.each do |nav_item| %>
-        <%= render 'shared/navitem', inner_text: nav_item %>
-      <% end %>
+    <ul class="grid--quarters">
+      <li class="flex--center">
+        <a href="#top" class="nav__item flex--center"><span>About</span></a>
+      </li>
+      <li class="flex--center">
+        <a href="#stack" class="nav__item flex--center"><span>Stack</span></a>
+      </li>
+      <li class="flex--center">
+        <a href="#projects" class="nav__item flex--center"><span>Projects</span></a>
+      </li>
+      <li class="flex--center">
+        <a href="#contact" class="nav__item flex--center"><span>Contact</span></a>
+      </li>
     </ul>
   </div>
 </nav>
